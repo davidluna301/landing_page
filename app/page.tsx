@@ -26,6 +26,15 @@ export default function Home() {
     },
   ];
 
+  const featureItems = [
+    { icon: "🍕", label: "Crafted Cuisine" },
+    { icon: "🚗", label: "Curbside Pickup" },
+    { icon: "🍽️", label: "Private Dining" },
+    { icon: "🎵", label: "Live Music" },
+    { icon: "🌿", label: "Outdoor Patio" },
+    { icon: "🥗", label: "Plant-based" },
+  ];
+
   return (
     <div className="page-shell">
       <main className="landing">
@@ -90,12 +99,14 @@ export default function Home() {
             </div>
           </div>
           <div className="story-icons">
-            <div>Crafted Cuisine</div>
-            <div>Curbside Pickup</div>
-            <div>Private Dining</div>
-            <div>Live Music</div>
-            <div>Outdoor Patio</div>
-            <div>Plant-based</div>
+            {featureItems.map((item) => (
+              <article key={item.label} className="story-feature">
+                <span className="feature-icon" aria-hidden="true">
+                  {item.icon}
+                </span>
+                <span className="feature-label">{item.label}</span>
+              </article>
+            ))}
           </div>
           <div className="story-photo">
             <img

@@ -262,19 +262,36 @@ button {
   gap: 10px;
 }
 
-.story-icons div {
+.story-feature {
   background: #ec8b28;
   color: #fff;
   border-radius: 13px;
   min-height: 75px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 0.88rem;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 9px;
+  padding: 8px 6px;
+  gap: 6px;
+}
+
+.feature-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+}
+
+.feature-label {
+  line-height: 1.05;
 }
 
 .story-photo {
