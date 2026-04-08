@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Crust Craft Bar logo</title>
+  <desc id="desc">Circular black and white logo with the words Eatery, Crust and Craft Bar.</desc>
+
+  <defs>
+    <path id="topArc" d="M 110 400 A 290 290 0 0 1 690 400" />
+    <path id="bottomArc" d="M 690 400 A 290 290 0 0 1 110 400" />
+    <path id="innerTopArc" d="M 160 400 A 240 240 0 0 1 640 400" />
+  </defs>
+
+  <circle cx="400" cy="400" r="398" fill="#fff" stroke="#000" stroke-width="5" />
+  <circle cx="400" cy="400" r="365" fill="#000" />
+  <circle cx="400" cy="400" r="230" fill="#fff" stroke="#000" stroke-width="7" />
+
+  <text fill="#fff" font-family="Anton, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="88" font-weight="700" letter-spacing="11" text-anchor="middle">
+    <textPath href="#topArc" startOffset="50%">EATERY</textPath>
+  </text>
+
+  <text fill="#fff" font-family="Anton, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="90" font-weight="700" letter-spacing="10" text-anchor="middle">
+    <textPath href="#bottomArc" startOffset="50%">CRAFT BAR</textPath>
+  </text>
+
+  <text x="400" y="255" text-anchor="middle" fill="#000" font-family="Barlow Condensed, Arial, sans-serif" font-size="52" font-weight="700">Est. 2014</text>
+
+  <text x="400" y="515" text-anchor="middle" fill="#000" font-family="Anton, Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" font-size="305" font-weight="700" letter-spacing="15">CRUST</text>
+
+  <text x="400" y="575" text-anchor="middle" fill="#000" font-family="Barlow Condensed, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="1">FOOD • VIBES • GOOD TIMES</text>
+
+  <circle cx="53" cy="400" r="21" fill="#fff" />
+  <circle cx="747" cy="400" r="21" fill="#fff" />
+  <text x="53" y="412" text-anchor="middle" fill="#000" font-size="26" font-family="Arial">★</text>
+  <text x="747" y="412" text-anchor="middle" fill="#000" font-size="26" font-family="Arial">★</text>
+
+  <path d="M 172 400 A 228 228 0 0 1 628 400" fill="none" stroke="#fff" stroke-width="7" />
+</svg>

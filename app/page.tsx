@@ -47,10 +47,18 @@ export default function Home() {
             <a href="#">Mission</a>
             <a href="#">Order Online</a>
           </nav>
-          <div className="brand-mark">Crust Pizza Co.</div>
+          <div className="brand-mark" aria-label="Crust logo">
+            <img src="/crust-logo.svg" alt="Crust Craft Bar logo" />
+          </div>
           <nav className="nav nav-right">
             <a href="#">About</a>
             <a href="#">Contact</a>
+            <a href="#" className="social-link" aria-label="Alerts">
+              <img src="/alert-icon.svg" alt="Alert" />
+            </a>
+            <a href="#" className="social-link" aria-label="Twitter">
+              <img src="/twitter-icon.svg" alt="Twitter" />
+            </a>
             <a href="#">Call Now</a>
           </nav>
         </header>
