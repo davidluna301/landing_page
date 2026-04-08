@@ -27,12 +27,12 @@ export default function Home() {
   ];
 
   const featureItems = [
-    { icon: "🍕", label: "Crafted Cuisine" },
-    { icon: "🚗", label: "Curbside Pickup" },
-    { icon: "🍽️", label: "Private Dining" },
-    { icon: "🎵", label: "Live Music" },
-    { icon: "🌿", label: "Outdoor Patio" },
-    { icon: "🥗", label: "Plant-based" },
+    { icon: "/icons/crafted-cuisine.svg", label: "Crafted Cuisine" },
+    { icon: "/icons/curbside-pickup.svg", label: "Curbside Pickup" },
+    { icon: "/icons/private-dining.svg", label: "Private Dining" },
+    { icon: "/icons/live-music.svg", label: "Live Music" },
+    { icon: "/icons/outdoor-patio.svg", label: "Outdoor Patio" },
+    { icon: "/icons/plant-based.svg", label: "Plant-based" },
   ];
 
   return (
@@ -115,9 +115,9 @@ export default function Home() {
           <div className="story-icons">
             {featureItems.map((item) => (
               <article key={item.label} className="story-feature">
-                <span className="feature-icon" aria-hidden="true">
-                  {item.icon}
-                </span>
+                <div className="feature-tile" aria-hidden="true">
+                  <img className="feature-icon" src={item.icon} alt="" />
+                </div>
                 <span className="feature-label">{item.label}</span>
               </article>
             ))}
@@ -177,7 +177,7 @@ export default function Home() {
                     alt="Food"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1548365328-9f547fb0953f?auto=format&fit=crop&w=500&q=80"
+                    src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Food serving"
                   />
                   <img
@@ -189,7 +189,7 @@ export default function Home() {
                     alt="Pizza"
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1600628422019-2d59f48ff33e?auto=format&fit=crop&w=500&q=80"
+                    src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=800"
                     alt="Fresh bake"
                   />
                   <img
@@ -202,13 +202,43 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bottom-cta">
+          <article className="franchise-card">
+            <h3>Wen&apos;s to own your own Crust Pizza Co.?</h3>
+            <p>
+              Lorem roes convenivence toxy bem sonodo is siochls.
+            </p>
+            <button type="button">Submit A Request</button>
+          </article>
+          <article className="store-showcase">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+              alt="Restaurant exterior"
+            />
+          </article>
+          <article className="request-card">
+            <h3>Subit A Request</h3>
+            <div>
+              <button type="button">Locations</button>
+              <button type="button">Got Questions</button>
+              <button type="button">Follow Us</button>
+            </div>
+          </article>
+        </section>
+
         <footer className="footer-nav">
-          <a href="#">Menu</a>
-          <a href="#">Catering</a>
-          <a href="#">Careers</a>
-          <a href="#">Commissions</a>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
+          <div className="footer-brand">
+            <img src="/crust-logo.svg" alt="Crust logo" />
+            <h3>Want to place an order now?</h3>
+          </div>
+          <div className="footer-links">
+            <a href="#">Menu</a>
+            <a href="#">Catesing</a>
+            <a href="#">Catering</a>
+            <a href="#">Commissions</a>
+            <a href="#">Priacy</a>
+            <a href="#">Terms</a>
+          </div>
         </footer>
       </main>
     </div>

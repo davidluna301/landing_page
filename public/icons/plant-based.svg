@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Plant-based">
+  <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 52V30" />
+    <path d="M32 30c0-10 8-18 18-18 0 10-8 18-18 18z" />
+    <path d="M32 36c-9 0-16-7-16-16 9 0 16 7 16 16z" />
+    <path d="M24 52h16" />
+  </g>
+</svg>
