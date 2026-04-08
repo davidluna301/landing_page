@@ -65,12 +65,18 @@ export default function Home() {
 
         <section className="hero">
           <img
-            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80"
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=2200&q=80"
             alt="Pizza hero"
           />
           <div className="hero-overlay">
-            <h1>For delicious, made-from scratch pizzas</h1>
-            <p>Motor oil dreams and handmade dough, every day.</p>
+            <h1>
+              For delicious,
+              <br />
+              made-from
+              <br />
+              scratch pizzas
+            </h1>
+            <p>Moar doo aneat eane inccot aooos.</p>
             <button type="button">Order Online</button>
           </div>
         </section>
