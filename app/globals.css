@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Anton&display=swap");
+@import "tailwindcss";
 
 :root {
   --background: #e8e5df;
@@ -332,152 +332,158 @@ button {
   margin-top: 24px;
 }
 
-.enjoy-grid {
+.enjoy-layout {
   margin-top: 12px;
   display: grid;
-  grid-template-columns: 1fr 0.56fr;
+  grid-template-columns: 0.95fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.enjoy-left,
+.enjoy-right {
+  display: grid;
   gap: 14px;
 }
 
 .big-card {
-  border-radius: 26px;
+  border-radius: 36px;
   overflow: hidden;
   position: relative;
-  min-height: 382px;
+  min-height: 540px;
 }
 
 .big-card img {
   width: 100%;
   height: 100%;
-  min-height: 382px;
+  min-height: 540px;
   object-fit: cover;
 }
 
 .seal {
   position: absolute;
   left: 50%;
-  top: 54%;
+  top: 52%;
   transform: translate(-50%, -50%);
-  border: 4px solid #121212;
-  width: 160px;
-  height: 160px;
+  border: 4px solid #1d1d1d;
+  width: 198px;
+  height: 198px;
   border-radius: 999px;
-  background: rgba(240, 141, 41, 0.9);
+  background: rgba(240, 141, 41, 0.92);
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   display: grid;
   place-items: center;
   text-align: center;
   line-height: 1.05;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.promo-col {
+.promo-row {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
 .promo-card {
   background: #17191f;
   color: #f5f5f5;
-  border-radius: 21px;
-  padding: 18px;
+  border-radius: 24px;
+  padding: 20px 16px 16px;
+  min-height: 290px;
+}
+
+.promo-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+  margin: 0 auto 12px;
 }
 
 .promo-card h3 {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
-  line-height: 1;
-  font-size: 2rem;
+  line-height: 0.98;
+  font-size: 2.25rem;
 }
 
 .promo-card p {
   margin-top: 8px;
   color: #c6cad0;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
+  line-height: 1.15;
 }
 
 .promo-card button {
   margin-top: 12px;
-  padding: 7px 14px;
+  padding: 9px 16px;
+  font-size: 1.05rem;
 }
 
 .collage-card {
-  grid-column: 2;
   background: #f8f6f0;
-  border-radius: 16px;
-  border: 1px solid #ded7ca;
-  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid #e5dfd3;
+  padding: 16px;
 }
 
 .collage-card h3 {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .mini-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
+  gap: 4px;
 }
 
 .mini-grid img {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1.08;
   object-fit: cover;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
-.bottom-row {
-  margin-top: 18px;
+.community-inline {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 0.8fr;
-  gap: 14px;
-  align-items: stretch;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 12px;
+  padding: 6px 2px 0;
 }
 
-.community p:first-child {
+.community-inline p:first-child {
   font-family: "Anton", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 8px;
+  font-size: 3.2rem;
+  margin-bottom: 6px;
 }
 
-.community h3,
-.request h3 {
+.community-inline h3 {
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 3.5rem;
   line-height: 0.98;
 }
 
-.community p {
-  margin-top: 7px;
+.community-inline p {
+  margin-top: 6px;
   color: var(--ink-soft);
-  font-size: 0.92rem;
+  font-size: 0.98rem;
+  line-height: 1.18;
 }
 
-.store-photo img {
-  width: 100%;
-  height: 100%;
-  min-height: 170px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-.request div {
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 7px;
-}
-
-.request button {
-  font-size: 0.84rem;
-  padding: 11px 7px;
-  border-radius: 12px;
+.community-inline img {
+  width: 190px;
+  height: auto;
 }
 
 .footer-nav {
@@ -510,12 +516,12 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .collage-card {
-    grid-column: auto;
+  .enjoy-layout {
+    grid-template-columns: 1fr;
   }
 
-  .bottom-row {
-    grid-template-columns: 1fr;
+  .promo-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -574,9 +580,35 @@ button {
 
   .promo-card h3,
   .collage-card h3,
-  .community h3,
-  .request h3 {
+  .community-inline h3 {
     font-size: 1.7rem;
+  }
+
+  .big-card,
+  .big-card img {
+    min-height: 420px;
+  }
+
+  .seal {
+    width: 150px;
+    height: 150px;
+    font-size: 2.2rem;
+  }
+
+  .promo-row {
+    grid-template-columns: 1fr;
+  }
+
+  .community-inline {
+    grid-template-columns: 1fr;
+  }
+
+  .community-inline p:first-child {
+    font-size: 2.2rem;
+  }
+
+  .community-inline img {
+    width: 160px;
   }
 
   .footer-nav {

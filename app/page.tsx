@@ -132,78 +132,74 @@ export default function Home() {
 
         <section className="enjoy">
           <h2>Ways To Enjoy</h2>
-          <div className="enjoy-grid">
-            <article className="big-card">
-              <img
-                src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=1000&q=80"
-                alt="Pepperoni pizza"
-              />
-              <div className="seal">Crust Pizza Co.</div>
-            </article>
-            <div className="promo-col">
-              <article className="promo-card">
-                <h3>Award-winning pizza & service</h3>
-                <p>Signature blend and daily baked crusts for all occasions.</p>
-                <button type="button">Learn More</button>
+          <div className="enjoy-layout">
+            <div className="enjoy-left">
+              <article className="big-card">
+                <img
+                  src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=1000&q=80"
+                  alt="Pepperoni pizza"
+                />
+                <div className="seal">Crust Pizza Co</div>
               </article>
-              <article className="promo-card">
-                <h3>Kids eat free Tuesdays!</h3>
-                <p>Your local neighborhood crew serves crowd-pleasers weekly.</p>
-                <button type="button">Find Our Complete Menu</button>
+              <article className="community-inline">
+                <div>
+                  <p>@yourbrandhandle</p>
+                  <h3>Let&apos;s work together for our community</h3>
+                  <p>Us and countless neighbors are proud partners every month.</p>
+                </div>
+                <img src="/community-illustration.svg" alt="Community illustration" />
               </article>
             </div>
-            <article className="collage-card">
-              <h3>Why Choose Us</h3>
-              <div className="mini-grid">
-                <img
-                  src="https://images.unsplash.com/photo-1593560704563-f176a2eb61db?auto=format&fit=crop&w=500&q=80"
-                  alt="Food"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1548365328-9f547fb0953f?auto=format&fit=crop&w=500&q=80"
-                  alt="Food serving"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=500&q=80"
-                  alt="Guests"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80"
-                  alt="Pizza"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1600628422019-2d59f48ff33e?auto=format&fit=crop&w=500&q=80"
-                  alt="Fresh bake"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=500&q=80"
-                  alt="Boxed pizza"
-                />
+            <div className="enjoy-right">
+              <div className="promo-row">
+                <article className="promo-card">
+                  <span className="promo-icon" aria-hidden="true">
+                    🍕
+                  </span>
+                  <h3>Award-winning pizza & service</h3>
+                  <p>Signature blend and daily baked crusts for all occasions.</p>
+                  <button type="button">Learn More</button>
+                </article>
+                <article className="promo-card">
+                  <span className="promo-icon" aria-hidden="true">
+                    🍕
+                  </span>
+                  <h3>Kids eat free Tuesdays!</h3>
+                  <p>Your local neighborhood crew serves crowd-pleasers weekly.</p>
+                  <button type="button">Find Our Complete Menu</button>
+                </article>
               </div>
-            </article>
-          </div>
-        </section>
-
-        <section className="bottom-row">
-          <article className="community">
-            <p>@yourbrandhandle</p>
-            <h3>Let&apos;s work together for our community</h3>
-            <p>Us and countless neighbors are proud partners every month.</p>
-          </article>
-          <article className="store-photo">
-            <img
-              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
-              alt="Restaurant exterior"
-            />
-          </article>
-          <article className="request">
-            <h3>Submit A Request</h3>
-            <div>
-              <button type="button">Catering</button>
-              <button type="button">Get Funds</button>
-              <button type="button">Help Us</button>
+              <article className="collage-card">
+                <h3>Why Choose Us</h3>
+                <div className="mini-grid">
+                  <img
+                    src="https://images.unsplash.com/photo-1593560704563-f176a2eb61db?auto=format&fit=crop&w=500&q=80"
+                    alt="Food"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1548365328-9f547fb0953f?auto=format&fit=crop&w=500&q=80"
+                    alt="Food serving"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=500&q=80"
+                    alt="Guests"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80"
+                    alt="Pizza"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1600628422019-2d59f48ff33e?auto=format&fit=crop&w=500&q=80"
+                    alt="Fresh bake"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=500&q=80"
+                    alt="Boxed pizza"
+                  />
+                </div>
+              </article>
             </div>
-          </article>
+          </div>
         </section>
 
         <footer className="footer-nav">
